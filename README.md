@@ -1,5 +1,5 @@
 # decoder-py
 
-Conjunto de decodificadores y transcriptores de texto:
+Conjunto de decodificadores y transcriptores de texto.
 
-    · hex -> utf-8
+1) Hexadecimal -> UTF-8
