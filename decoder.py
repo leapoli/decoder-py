@@ -1,12 +1,12 @@
 __author__ = "Leandro Poli"
 __copyright__ = "Copyright 2018, Decoder"
 __license__ = "GPLv3"
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 __maintainer__ = __author__
 __status__ = "Production"
 
 
-def hex_to_uf8(value):
+def hex_to_utf8(value):
     """
     Converts hex characters to UTF-8
     :param value: String to convert
@@ -202,3 +202,136 @@ def hex_to_uf8(value):
                 .replace("\\xc3\\xbd", "ý") \
                 .replace("\\xc3\\xbe", "þ") \
                 .replace("\\xc3\\xbf", "ÿ")\
+
+
+
+def windows_1251_to_utf8(value):
+    '''
+    Converts ISO 8859-5 and Windows-1251 characters to UTF-8
+    :param value: String to convert
+    :return: String with characters converted
+    '''
+    return value.replace("â‚¬", "€") \
+                .replace("â€š", "‚") \
+                .replace("Æ’", "ƒ") \
+                .replace("â€ž", "„") \
+                .replace("â€¦", "…") \
+                .replace("â€ ", "†") \
+                .replace("â€¡", "‡") \
+                .replace("Ë†", "ˆ") \
+                .replace("â€°", "‰") \
+                .replace("Å ", "Š") \
+                .replace("â€¹", "‹") \
+                .replace("Å’", "Œ") \
+                .replace("Å½", "Ž") \
+                .replace("â€˜", "‘") \
+                .replace("â€™", "’") \
+                .replace("â€œ", "“") \
+                .replace("â€", "”") \
+                .replace("â€¢", "•") \
+                .replace("â€“", "–") \
+                .replace("â€”", "—") \
+                .replace("Ëœ", "˜") \
+                .replace("â„¢", "™") \
+                .replace("Å¡", "š") \
+                .replace("â€º", "›") \
+                .replace("Å“", "œ") \
+                .replace("Å¾", "ž") \
+                .replace("Å¸", "Ÿ") \
+                .replace("Â ", "") \
+                .replace("Â¡", "¡") \
+                .replace("Â¢", "¢") \
+                .replace("Â£", "£") \
+                .replace("Â¤", "¤") \
+                .replace("Â¥", "¥") \
+                .replace("Â¦", "¦") \
+                .replace("Â§", "§") \
+                .replace("Â¨", "¨") \
+                .replace("Â©", "©") \
+                .replace("Âª", "ª") \
+                .replace("Â«", "«") \
+                .replace("Â¬", "¬") \
+                .replace("Â­", "­") \
+                .replace("Â®", "®") \
+                .replace("Â¯", "¯") \
+                .replace("Â°", "°") \
+                .replace("Â±", "±") \
+                .replace("Â²", "²") \
+                .replace("Â³", "³") \
+                .replace("Â´", "´") \
+                .replace("Âµ", "µ") \
+                .replace("Â¶", "¶") \
+                .replace("Â·", "·") \
+                .replace("Â¸", "¸") \
+                .replace("Â¹", "¹") \
+                .replace("Âº", "º") \
+                .replace("Â»", "»") \
+                .replace("Â¼", "¼") \
+                .replace("Â½", "½") \
+                .replace("Â¾", "¾") \
+                .replace("Â¿", "¿") \
+                .replace("Ã€", "À") \
+                .replace("Ã", "Á") \
+                .replace("Ã‚", "Â") \
+                .replace("Ãƒ", "Ã") \
+                .replace("Ã„", "Ä") \
+                .replace("Ã…", "Å") \
+                .replace("Ã†", "Æ") \
+                .replace("Ã‡", "Ç") \
+                .replace("Ãˆ", "È") \
+                .replace("Ã‰", "É") \
+                .replace("ÃŠ", "Ê") \
+                .replace("Ã‹", "Ë") \
+                .replace("ÃŒ", "Ì") \
+                .replace("Ã", "Í") \
+                .replace("ÃŽ", "Î") \
+                .replace("Ã", "Ï") \
+                .replace("Ã", "Ð") \
+                .replace("Ã‘", "Ñ") \
+                .replace("Ã’", "Ò") \
+                .replace("Ã“", "Ó") \
+                .replace("Ã”", "Ô") \
+                .replace("Ã•", "Õ") \
+                .replace("Ã–", "Ö") \
+                .replace("Ã—", "×") \
+                .replace("Ã˜", "Ø") \
+                .replace("Ã™", "Ù") \
+                .replace("Ãš", "Ú") \
+                .replace("Ã›", "Û") \
+                .replace("Ãœ", "Ü") \
+                .replace("Ã", "Ý") \
+                .replace("Ãž", "Þ") \
+                .replace("ÃŸ", "ß") \
+                .replace("Ã ", "à") \
+                .replace("Ã¡", "á") \
+                .replace("Ã¢", "â") \
+                .replace("Ã£", "ã") \
+                .replace("Ã¤", "ä") \
+                .replace("Ã¥", "å") \
+                .replace("Ã¦", "æ") \
+                .replace("Ã§", "ç") \
+                .replace("Ã¨", "è") \
+                .replace("Ã©", "é") \
+                .replace("Ãª", "ê") \
+                .replace("Ã«", "ë") \
+                .replace("Ã¬", "ì") \
+                .replace("Ã­", "í") \
+                .replace("Ã®", "î") \
+                .replace("Ã¯", "ï") \
+                .replace("Ã°", "ð") \
+                .replace("Ã±", "ñ") \
+                .replace("Á±", "ñ") \
+                .replace("Ã²", "ò") \
+                .replace("Ã³", "ó") \
+                .replace("Ã´", "ô") \
+                .replace("Ãµ", "õ") \
+                .replace("Ã¶", "ö") \
+                .replace("Ã·", "÷") \
+                .replace("Ã¸", "ø") \
+                .replace("Ã¹", "ù") \
+                .replace("Ãº", "ú") \
+                .replace("Ã»", "û") \
+                .replace("Ã¼", "ü") \
+                .replace("Ã½", "ý") \
+                .replace("Ã¾", "þ") \
+                .replace("Ã¿", "ÿ")
