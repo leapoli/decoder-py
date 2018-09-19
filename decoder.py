@@ -280,16 +280,19 @@ def windows_1251_to_utf8(value):
                 .replace("Ã‡", "Ç") \
                 .replace("Ãˆ", "È") \
                 .replace("Ã‰", "É") \
+                .replace("Á‰", "É") \
                 .replace("ÃŠ", "Ê") \
                 .replace("Ã‹", "Ë") \
                 .replace("ÃŒ", "Ì") \
                 .replace("Ã", "Í") \
+                .replace("Á", "Í") \
                 .replace("ÃŽ", "Î") \
                 .replace("Ã", "Ï") \
                 .replace("Ã", "Ð") \
                 .replace("Ã‘", "Ñ") \
                 .replace("Ã’", "Ò") \
                 .replace("Ã“", "Ó") \
+                .replace("Á“", "Ó") \
                 .replace("Ã”", "Ô") \
                 .replace("Ã•", "Õ") \
                 .replace("Ã–", "Ö") \
@@ -297,13 +300,16 @@ def windows_1251_to_utf8(value):
                 .replace("Ã˜", "Ø") \
                 .replace("Ã™", "Ù") \
                 .replace("Ãš", "Ú") \
+                .replace("Áš", "Ú") \
                 .replace("Ã›", "Û") \
                 .replace("Ãœ", "Ü") \
+                .replace("Áœ", "Ü") \
                 .replace("Ã", "Ý") \
                 .replace("Ãž", "Þ") \
                 .replace("ÃŸ", "ß") \
                 .replace("Ã ", "à") \
                 .replace("Ã¡", "á") \
+                .replace("Á¡", "á") \
                 .replace("Ã¢", "â") \
                 .replace("Ã£", "ã") \
                 .replace("Ã¤", "ä") \
@@ -312,10 +318,12 @@ def windows_1251_to_utf8(value):
                 .replace("Ã§", "ç") \
                 .replace("Ã¨", "è") \
                 .replace("Ã©", "é") \
+                .replace("Á©", "é") \
                 .replace("Ãª", "ê") \
                 .replace("Ã«", "ë") \
                 .replace("Ã¬", "ì") \
                 .replace("Ã­", "í") \
+                .replace("Á­", "í") \
                 .replace("Ã®", "î") \
                 .replace("Ã¯", "ï") \
                 .replace("Ã°", "ð") \
@@ -323,6 +331,7 @@ def windows_1251_to_utf8(value):
                 .replace("Á±", "ñ") \
                 .replace("Ã²", "ò") \
                 .replace("Ã³", "ó") \
+                .replace("Á³", "ó") \
                 .replace("Ã´", "ô") \
                 .replace("Ãµ", "õ") \
                 .replace("Ã¶", "ö") \
@@ -330,8 +339,10 @@ def windows_1251_to_utf8(value):
                 .replace("Ã¸", "ø") \
                 .replace("Ã¹", "ù") \
                 .replace("Ãº", "ú") \
+                .replace("Áº", "ú") \
                 .replace("Ã»", "û") \
                 .replace("Ã¼", "ü") \
+                .replace("Á¼", "ü") \
                 .replace("Ã½", "ý") \
                 .replace("Ã¾", "þ") \
                 .replace("Ã¿", "ÿ")
