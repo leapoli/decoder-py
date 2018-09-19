@@ -1,7 +1,7 @@
 __author__ = "Leandro Poli"
 __copyright__ = "Copyright 2018, Decoder"
 __license__ = "GPLv3"
-__version__ = "1.1.0"
+__version__ = "1.1.1"
 __maintainer__ = __author__
 __status__ = "Production"
 
