@@ -13,6 +13,7 @@ def hex_to_utf8(value):
     :return: String with characters converted
     """
     return value.replace("\\r", " ") \
+                .replace("\\xa0", " ") \
                 .replace("\\x21", "!") \
                 .replace("\\x22", "\"") \
                 .replace("\\x23", "#") \
